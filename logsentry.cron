@@ -1,0 +1,1 @@
+00 * * * *	root	/bin/sh /usr/sbin/logcheck.sh
