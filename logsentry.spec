@@ -35,7 +35,7 @@ portów dla internetowej spo³eczno¶ci.
 %patch0 -p0
 
 %build
-gcc %{rpmcflags} -Wall -o ./src/logtail ./src/logtail.c
+%{__cc} %{rpmcflags} -Wall -o ./src/logtail ./src/logtail.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
