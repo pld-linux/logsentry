@@ -14,6 +14,7 @@ Requires:	fileutils
 Requires:	mailx
 Requires:	net-tools
 Requires:	sh-utils
+Requires:	crondaemon
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/logsentry
