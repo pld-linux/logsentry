@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.psionic.com/downloads/%{name}-%{version}.tar.gz
+# Source0-md5:	e97c2f096e219e20310c1b80e9e1bc29
 Source1:	%{name}.cron
 Patch0:		%{name}-pld.patch
 URL:		http://www.psionic.com/products/
