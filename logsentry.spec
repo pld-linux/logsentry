@@ -2,7 +2,7 @@ Summary:	System logs monitor and security violations detection tool
 Summary(pl):	Monitor logów oraz narzêdzie wykrywaj±ce naruszenia bezpieczeñstwa
 Name:		logsentry
 Version:	1.1.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://www.psionic.com/downloads/%{name}-%{version}.tar.gz
@@ -11,7 +11,7 @@ Source1:	%{name}.cron
 Patch0:		%{name}-pld.patch
 URL:		http://www.psionic.com/products/
 Requires:	fileutils
-Requires:	mailx
+Requires:	/bin/mail
 Requires:	net-tools
 Requires:	sh-utils
 Requires:	crondaemon
