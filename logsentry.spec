@@ -10,11 +10,11 @@ Source0:	http://www.psionic.com/downloads/%{name}-%{version}.tar.gz
 Source1:	%{name}.cron
 Patch0:		%{name}-pld.patch
 URL:		http://www.psionic.com/products/
-Requires:	fileutils
 Requires:	/bin/mail
+Requires:	crondaemon
+Requires:	fileutils
 Requires:	net-tools
 Requires:	sh-utils
-Requires:	crondaemon
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/logsentry
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES CREDITS INSTALL README* systems/linux/README.linux.IMPORTANT
 %attr(750,root,root) %dir %{_sysconfdir}
-%attr(640,root,root) %config(noreplace,missingok) %verify(not md5 size mtime) %{_sysconfdir}/*
+%attr(640,root,root) %config(noreplace,missingok) %verify(not md5 mtime size) %{_sysconfdir}/*
 %attr(755,root,root) %{_sbindir}/*
 %attr(640,root,root) /etc/cron.d/*
