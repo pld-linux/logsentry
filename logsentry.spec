@@ -1,5 +1,5 @@
 Summary:	System logs monitor and security violations detection tool
-Summary(pl.UTF-8):   Monitor logów oraz narzędzie wykrywające naruszenia bezpieczeństwa
+Summary(pl.UTF-8):	Monitor logów oraz narzędzie wykrywające naruszenia bezpieczeństwa
 Name:		logsentry
 Version:	1.1.1
 Release:	3
