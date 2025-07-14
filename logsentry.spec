@@ -33,7 +33,7 @@ portów dla internetowej społeczności.
 
 %prep
 %setup  -q -n logcheck-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__cc} %{rpmcflags} -Wall -o src/logtail src/logtail.c
